@@ -4,11 +4,11 @@ import detaildSVG from "./../assets/images/icon-detailed-records.svg";
 import customizableSVG from "./../assets/images/icon-fully-customizable.svg";
 const Statistics = () => {
   return (
-    <section className="text-center w-full md:max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto">
-      <h2 className="text-2xl text-veryDarkViolet font-bold">
+    <section className="text-center w-full md:max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto mt-12 mb-8">
+      <h2 className="text-3xl lg:text-4xl text-veryDarkViolet font-bold mb-4">
         Advanced Statistics
       </h2>
-      <p className="text-sm text-veryDarkBlue mb-20">
+      <p className="text-base text-veryDarkBlue mb-20">
         Track how your links are performing across the web with our advanced
         statistics dashboard.
       </p>

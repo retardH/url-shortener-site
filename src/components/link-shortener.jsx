@@ -1,6 +1,8 @@
 import { useContext, useState } from "react";
 import { LinkContext } from "../contexts/links-context-provider";
 import axios from "axios";
+import bgDesktop from "./../assets/images/bg-shorten-desktop.svg";
+import bgMobile from "./../assets/images/bg-shorten-mobile.svg";
 
 const Shortener = () => {
   const [input, setInput] = useState("");
@@ -25,7 +27,7 @@ const Shortener = () => {
     }
   };
   return (
-    <div className="w-full px-4 md:max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto mb-8 bg-darkViolet py-6 md:py-8 flex items-center flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 rounded-md bg-shortenerImgMobile md:bg-shortenerImgDesktop bg-no-repeat bg-right-top md:bg-repeat md:bg-auto">
+    <div className="w-full px-4 md:max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto mb-8 bg-darkViolet py-6 md:py-8 flex items-center flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 rounded-md bg-[url('./src/assets/images/bg-shorten-mobile.svg')] md:bg-[url('./src/assets/images/bg-shorten-desktop.svg')] bg-no-repeat bg-right-top md:bg-repeat md:bg-auto">
       <input
         type="text"
         className="p-3 rounded-md shrink flex-1 w-full md:w-auto focus:outline-cyan outline-none"
